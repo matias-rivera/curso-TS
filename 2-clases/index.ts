@@ -33,23 +33,23 @@ const empleado: Empleado = {
 }
 
 import { Rectangulo } from "./Formas";
-  const rect = new Rectangulo("azul", 10, 10);
-  const rectArea = rect.calcularArea();
-  //console.log(rectArea);
+const rect = new Rectangulo("azul", 10, 10);
+const rectArea = rect.calcularArea();
+//console.log(rectArea);
 
-  const circuloRojoArea = circuloRojo.calcularArea();
-  //console.log(circuloRojoArea);
+const circuloRojoArea = circuloRojo.calcularArea();
+//console.log(circuloRojoArea);
 
-  // 4 - Clases Abstractas
-  import { Cliente } from "./Usuarios";
+// 4 - Clases Abstractas
+import { Cliente } from "./Usuarios";
 import { TarjetaCredito, TarjetaDebidto } from "./MetodosDePago";
-  const cliente = new Cliente("1","matias@example.com","123456");
-  
-  const tarjetaCredito = new TarjetaCredito('VISA', 1000);
-  const tarjetaDebito = new TarjetaDebidto('BBVA', 5000);
-  
-  
-  cliente.cargarSaldo(1000, tarjetaDebito);
-  //const usuario1 = new Usuario("1","email@example.com", "123456");
-  //usuario1.email = "matiasgoogle.com";
-  //console.log(usuario1.email);
+const cliente = new Cliente("1","matias@example.com","123456");
+
+const tarjetaCredito = new TarjetaCredito('VISA', 1000);
+const tarjetaDebito = new TarjetaDebidto('BBVA', 5000);
+
+
+cliente.cargarSaldo(1000, tarjetaCredito);
+//const usuario1 = new Usuario("1","email@example.com", "123456");
+//usuario1.email = "matiasgoogle.com";
+//console.log(usuario1.email);

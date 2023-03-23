@@ -9,6 +9,15 @@ function sumarDosValores(a: number, b: number): number {
   return a + b;
 }
 
+// Type Assertion
+let texto: any = 'texto';
+let textoString: string = texto as string;
+let textoStringDos: string = <string> texto;
+
+let helados: any = ['vainilla', 'frutilla'];
+(helados as string[]).push('chocolate');
+console.log(helados);
+
 // Type Aliasses
 type transaccion = {
   id: string;
